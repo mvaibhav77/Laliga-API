@@ -7,13 +7,13 @@ const mtch=document.getElementById('mtch');
 const stats=document.getElementById('stats');
 const plyrs=document.getElementById('plyrs');
 
-// window.addEventListener('load',(e)=>{
-//     liga.getStandings()
-//      .then(data => {
-//          ui.showTable(data.league.standings[0]);
-//         // console.log(Object.keys(data.league.standings[0]).length)
-//         })
-//        .catch(err => console.log(err))});
+window.addEventListener('load',(e)=>{
+    liga.getStandings()
+     .then(data => {
+         ui.showTable(data.league.standings[0]);
+        // console.log(Object.keys(data.league.standings[0]).length)
+        })
+       .catch(err => console.log(err))});
 
 
 tbl.addEventListener('click',(e)=>{
