@@ -177,11 +177,12 @@ class UI{
         col.addEventListener('click',(e)=>{
             const id= e.target.id;
             if(id){
-              liga.getPlayers(id)
-               .then(data => {
-                ui.showPlyrs(data);
-                })
-                .catch(err => console.log(err))}
+                bodyData.innerHTML='';
+                liga.getPlayers(id)
+                 .then(data => {
+                    ui.showPlyrs(data);
+                 })
+                  .catch(err => console.log(err))}
           })
 
     }
