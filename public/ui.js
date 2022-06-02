@@ -40,13 +40,11 @@ class UI{
         output+='</tbody>'
         table.innerHTML=output;
         const bodyData=document.querySelector("#mainData");
-        bodyData.innerHTML='';
         bodyData.appendChild(table);
     }
 
     showMatches(matches){
         const bodyData=document.querySelector("#mainData");
-        bodyData.innerHTML='';
 
 		// Array for showing DayName
 		const DayName= ['Sun','Mon','Tues','Wed','Thurs','Fri','Sat'];
@@ -118,7 +116,6 @@ class UI{
         const bodyData=document.querySelector("#mainData");
         const table = document.createElement('table');
         table.className='table table-hover';
-        bodyData.innerHTML='';
         bodyData.innerHTML='<h5 class="mt-3 mx-1">Goals</h5>'
         let output=`
             <thead>
@@ -146,7 +143,6 @@ class UI{
     showTeams(teams){
         // DOM Changes
         const bodyData=document.querySelector("#mainData");
-        bodyData.innerHTML='';
         let output=
         `<div class="card"style="background-color:#091094">
             <div class="card-header text-white">Teams</div>
@@ -193,7 +189,6 @@ class UI{
     showPlyrs(players){
         // DOM Changes
         const bodyData=document.querySelector("#mainData");
-        bodyData.innerHTML='';
 
         let output=`
             <div class="card"style="background-color:#091094">

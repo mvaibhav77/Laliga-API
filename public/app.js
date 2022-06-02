@@ -11,12 +11,13 @@ window.addEventListener('load',(e)=>{
     liga.getStandings()
      .then(data => {
          ui.showTable(data.league.standings[0]);
-        // console.log(Object.keys(data.league.standings[0]).length)
         })
        .catch(err => console.log(err))});
 
 
 tbl.addEventListener('click',(e)=>{
+  const bodyData=document.querySelector("#mainData");
+  bodyData.innerHTML='';
   tbl.classList.add('active');
   mtch.classList.remove('active');
   stats.classList.remove('active');
@@ -29,6 +30,8 @@ tbl.addEventListener('click',(e)=>{
 });
 
 mtch.addEventListener('click',(e)=>{
+  const bodyData=document.querySelector("#mainData");
+  bodyData.innerHTML='';
   tbl.classList.remove('active');
   mtch.classList.add('active');
   stats.classList.remove('active');
@@ -42,11 +45,8 @@ mtch.addEventListener('click',(e)=>{
 });
 
 stats.addEventListener('click',(e)=>{
-  // console.log(tbl.classList);
-  // tbl.classList.add('waste');
-  // console.log(tbl.classList);
-  // tbl.classList.remove('waste');
-  // console.log(tbl.classList);
+  const bodyData=document.querySelector("#mainData");
+  bodyData.innerHTML='';
   tbl.classList.remove('active');
   mtch.classList.remove('active');
   stats.classList.add('active');
@@ -61,6 +61,8 @@ stats.addEventListener('click',(e)=>{
 });
 
 plyrs.addEventListener('click',(e)=>{
+  const bodyData=document.querySelector("#mainData");
+  bodyData.innerHTML='';
   tbl.classList.remove('active');
   mtch.classList.remove('active');
   stats.classList.remove('active');

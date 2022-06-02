@@ -24,7 +24,6 @@ router.get('/',cache('2 minutes'),async (req,res)=>{
       
       const apiRes =axios.request(options)
       apiRes.then(function (RES) {
-        console.log(RES.data);
         res.status(200).json(RES.data);
       }).catch(function (error) {
         console.error(error);
