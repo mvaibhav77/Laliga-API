@@ -1,6 +1,6 @@
 # Laliga-API
 
-It is a small API Web Application showing basic information about La Liga League of Europe..
+It is a small API Web Application showing basic information about La Liga League of Europe.
 I used :
 1. Bootswatch for styling
 2. Fetch API to get the data from https://rapidapi.com/api-sports/api/api-football-beta/.
