@@ -16,6 +16,15 @@ window.addEventListener('load',(e)=>{
 
 
 tbl.addEventListener('click',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.innerWidth<'600'){
+    nav.classList.remove('navbar-nav');
+				nav.classList.add('nav-pills');
+				nav.style=`
+					display:none;
+					float:none;
+				`
+  }
   const bodyData=document.querySelector("#mainData");
   bodyData.innerHTML='';
   tbl.classList.add('active');
@@ -30,6 +39,15 @@ tbl.addEventListener('click',(e)=>{
 });
 
 mtch.addEventListener('click',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.innerWidth<'600'){
+    nav.classList.remove('navbar-nav');
+				nav.classList.add('nav-pills');
+				nav.style=`
+					display:none;
+					float:none;
+				`
+  }
   const bodyData=document.querySelector("#mainData");
   bodyData.innerHTML='';
   tbl.classList.remove('active');
@@ -45,6 +63,15 @@ mtch.addEventListener('click',(e)=>{
 });
 
 stats.addEventListener('click',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.innerWidth<'600'){
+    nav.classList.remove('navbar-nav');
+				nav.classList.add('nav-pills');
+				nav.style=`
+					display:none;
+					float:none;
+				`
+  }
   const bodyData=document.querySelector("#mainData");
   bodyData.innerHTML='';
   tbl.classList.remove('active');
@@ -61,6 +88,15 @@ stats.addEventListener('click',(e)=>{
 });
 
 plyrs.addEventListener('click',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.innerWidth<'600'){
+    nav.classList.remove('navbar-nav');
+				nav.classList.add('nav-pills');
+				nav.style=`
+					display:none;
+					float:none;
+				`
+  }
   const bodyData=document.querySelector("#mainData");
   bodyData.innerHTML='';
   tbl.classList.remove('active');
